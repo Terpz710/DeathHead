@@ -281,14 +281,14 @@ public function onCommand(CommandSender $sender, Command $command, string $label
             //TYPE IS STEVE
             if($type == "steve"){
 
-                $skull = VanillaBlocks::MOB_HEAD();
+                $skull = VanillaBlocks::MOB_HEAD()->asItem();
 
             }else{
 
                 //TYPE IS SKULL
                 if($type == "skull"){
 
-                    $skull = VanillaBlocks::MOB_HEAD();
+                    $skull = VanillaBlocks::MOB_HEAD()->asItem();
 
 
                 //TYPE IS SOMETHING ELSE OTHER THAN SKULL/STEVE RETURN AND LOG ERROR
