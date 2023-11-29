@@ -28,7 +28,6 @@ use pocketmine\utils\TextFormat;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\player\PlayerDeathEvent;
-use pocketmine\item\ItemIds;
 use pocketmine\item\ItemFactory;
 use pocketmine\item\Item;
 use pocketmine\item\VanillaItems;
