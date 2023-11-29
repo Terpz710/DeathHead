@@ -23,6 +23,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\event\player\PlayerDeathEvent;
 use pocketmine\item\Item;
 use pocketmine\block\VanillaBlocks;
+use pocketmine\block\utils\MobHeadType;
 use pocketmine\utils\Config;
 
 class Main extends PluginBase implements Listener {
@@ -171,7 +172,7 @@ public function onCommand(CommandSender $sender, Command $command, string $label
             $type = $config->get("type");
             //TYPE IS STEVE
             if($type == "steve"){
-                $skull = VanillaBlocks::MOB_HEAD()->asItem();
+                $skull = VanillaBlocks::MOB_HEAD()->setMobHeadType(MobHeadType::PLAYER())->asItem();
             }else{
                 //TYPE IS SKULL
                 if($type == "skull"){
