@@ -29,7 +29,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\player\PlayerDeathEvent;
 use pocketmine\item\Item;
-use pocketmine\item\VanillaItems;
+use pocketmine\block\VanillaBlocks;
 use pocketmine\utils\Config;
 
 
@@ -281,14 +281,14 @@ public function onCommand(CommandSender $sender, Command $command, string $label
             //TYPE IS STEVE
             if($type == "steve"){
 
-                $skull = VanillaItems::PLAYER_HEAD();
+                $skull = VanillaBlocks::MOB_HEAD();
 
             }else{
 
                 //TYPE IS SKULL
                 if($type == "skull"){
 
-                    $skull = VanillaItems::SKELETON_SKULL();
+                    $skull = VanillaBlocks::MOB_HEAD();
 
 
                 //TYPE IS SOMETHING ELSE OTHER THAN SKULL/STEVE RETURN AND LOG ERROR
